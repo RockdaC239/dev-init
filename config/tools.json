@@ -1,0 +1,55 @@
+{
+  "winget": [
+    {
+      "name": "Git",
+      "id": "Git.Git"
+    },
+    {
+      "name": "GitHub CLI",
+      "id": "GitHub.cli"
+    },
+    {
+      "name": "Visual Studio Code",
+      "id": "Microsoft.VisualStudioCode"
+    },
+    {
+      "name": "Docker Desktop",
+      "id": "Docker.DockerDesktop"
+    },
+    {
+      "name": "Node.js LTS",
+      "id": "OpenJS.NodeJS.LTS"
+    },
+    {
+      "name": "Python 3.12",
+      "id": "Python.Python.3.12"
+    },
+    {
+      "name": "Miniconda3",
+      "id": "Anaconda.Miniconda3"
+    }
+  ],
+  "brew": {
+    "formulae": [
+      "git",
+      "gh",
+      "node",
+      "python"
+    ],
+    "casks": [
+      "visual-studio-code",
+      "docker",
+      "miniconda"
+    ]
+  },
+  "npmGlobal": [
+    "@openai/codex",
+    "@anthropic-ai/claude-code"
+  ],
+  "postInstall": [
+    "gh auth login",
+    "codex login",
+    "claude login",
+    "docker login"
+  ]
+}
